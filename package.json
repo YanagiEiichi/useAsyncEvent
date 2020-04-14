@@ -1,0 +1,20 @@
+{
+  "name": "use-async-event",
+  "version": "0.1.0",
+  "description": "React hook, return an (EventDispatch & PromiseLike) object.",
+  "main": "src/index.js",
+  "author": "admin@web-tinker.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8.0",
+    "react": "^16.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YanagiEiichi/useAsyncEvent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YanagiEiichi/useAsyncEvent/issues"
+  },
+  "homepage": "https://github.com/YanagiEiichi/useAsyncEvent#readme"
+}
