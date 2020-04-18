@@ -1,0 +1,9 @@
+section {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em;
+}
+
+section > h2 {
+    margin-top: 0;
+}

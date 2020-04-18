@@ -2,7 +2,7 @@ import React, { MouseEvent } from 'react';
 import useAsyncGenerator from 'use-async-generator';
 import useAsyncEvent from 'use-async-event';
 
-const Demo = () => {
+export default () => {
     const buttonClick = useAsyncEvent<MouseEvent<HTMLButtonElement>>();
 
     const message = useAsyncGenerator(async function* () {
@@ -19,17 +19,12 @@ const Demo = () => {
             let event = await buttonClick;
             yield `Coords is {${event.clientX}, ${event.clientY}}`;
         }
-    }, []);
+    }, [buttonClick]);
 
     return (
         <div>
-            <button onClick={buttonClick}>I'am a button</button>
-            <hr />
-            <main>
-                {message}
-            </main>
+            <button onClick={buttonClick}>I'm a button</button>
+            &nbsp; {message}
         </div>
     );
 };
-
-export default Demo;

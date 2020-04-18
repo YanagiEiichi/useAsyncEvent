@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Demo from './Demo';
+import App from './App';
 
 let root = document.createElement('react-root');
 document.body.appendChild(root);
-ReactDOM.render(<Demo />, root);
+ReactDOM.render(<App />, root);
