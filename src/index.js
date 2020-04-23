@@ -33,7 +33,7 @@ function wrapReactEventPersist(func) {
     }
 }
 
-function useAsyncPromise(options, deps) {
+function useAsyncEvent(options, deps) {
     // Overload args
     switch (true) {
         // Case 0: no args
@@ -114,4 +114,4 @@ function useAsyncPromise(options, deps) {
     }, deps);
 }
 
-export default useAsyncPromise;
+export default useAsyncEvent;
